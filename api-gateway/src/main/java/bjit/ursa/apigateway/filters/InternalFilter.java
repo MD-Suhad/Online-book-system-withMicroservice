@@ -32,6 +32,8 @@ public class InternalFilter extends AbstractGatewayFilterFactory<InternalFilter.
             }
             exchange.getResponse().setStatusCode(HttpStatus.UNAUTHORIZED);
             return exchange.getResponse().setComplete();
+            exchange.getResponse().setStatusCode(HttpStatus.UNAUTHORIZED);
+            return exchange.getResponse().setComplete();
         };
     }
 
