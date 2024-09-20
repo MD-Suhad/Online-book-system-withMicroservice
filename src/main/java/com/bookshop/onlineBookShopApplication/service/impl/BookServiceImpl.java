@@ -5,7 +5,6 @@ import com.bookshop.onlineBookShopApplication.model.BookRequestModel;
 import com.bookshop.onlineBookShopApplication.model.BookResponseModel;
 import com.bookshop.onlineBookShopApplication.repository.BookRepository;
 import com.bookshop.onlineBookShopApplication.service.BookService;
-import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
