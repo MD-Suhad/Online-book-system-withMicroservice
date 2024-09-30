@@ -1,6 +1,6 @@
 package bjit.ursa.bookservice.datastructures.queue;
 
-public class ArrayQueue implements Queue<T>{
+public class ArrayQueue<T> implements Queue<T>{
     private Object[] data;
     private int front;
     private int rear;
@@ -29,6 +29,16 @@ public class ArrayQueue implements Queue<T>{
         }
         front = adjustIndex(front,data.length);
         return (T) data[front++];
+    }
+
+    @Override
+    @SuppressWarnings("unchecked")
+    public T peek(){
+                if(isEmpty()){
+                    throw new RuntimeException("queue is empty");
+                }
+                front = adjustIndex(front,data.length);
+                return (T) data[front];
     }
 
     @Override
