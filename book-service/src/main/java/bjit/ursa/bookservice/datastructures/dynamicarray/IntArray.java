@@ -39,7 +39,7 @@ public class IntArray implements Iterable<Integer> {
         }
 
     //To get/set values without method call overhead you can do
-    //arrry_obj.arr[index] instead, you can gain about 10x the speed
+    //array_obj.arr[index] instead, you can gain about 10x the speed
 
         public int get(int index){
             return arr[index];
