@@ -124,11 +124,10 @@ public class IntArray implements Iterable<Integer> {
         //Example usage
         public static  void main(String[] args) throws IllegalAccessException {
             IntArray ar = new IntArray(50);
+            ar.add(1);
+            ar.add(2);
             ar.add(3);
-            ar.add(7);
-            ar.add(6);
-            ar.add(-2);
-            ar.sort();
+            ar.add(-4);
         }
 
 
