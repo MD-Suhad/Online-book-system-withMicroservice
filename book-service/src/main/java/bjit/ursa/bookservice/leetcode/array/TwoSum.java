@@ -13,6 +13,8 @@ public class TwoSum {
                 if(sum.containsKey(j)){
                     return new int[] {sum.get(j),i};
                 }
+
+
                 sum.put(k,i);
             }
             return new int[] {};
