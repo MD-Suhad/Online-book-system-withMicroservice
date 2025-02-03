@@ -2,6 +2,8 @@ package bjit.ursa.bookservice.leetcodeproblem;
 
 import bjit.ursa.bookservice.leetcode.array.ListNode;
 
+import static bjit.ursa.bookservice.leetcode.array.ListNode.*;
+
 public class addTwoNumber {
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
         ListNode dummyHead = new ListNode(0);
@@ -17,7 +19,7 @@ public class addTwoNumber {
             carry = sum / 10;
 
             ListNode newNode = new ListNode(digit);
-            ListNode.next = newNode;
+            next = newNode;
             tail = tail.next;
 
             l1 = (l1 != null) ? l1.next : null;
