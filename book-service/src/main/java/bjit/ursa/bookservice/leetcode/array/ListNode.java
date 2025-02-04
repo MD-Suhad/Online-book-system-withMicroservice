@@ -1,5 +1,6 @@
 package bjit.ursa.bookservice.leetcode.array;
 
 public enum ListNode {
-    next
+    next;
+    public int val;
 }

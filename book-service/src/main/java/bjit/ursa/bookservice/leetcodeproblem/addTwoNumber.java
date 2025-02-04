@@ -6,7 +6,8 @@ import static bjit.ursa.bookservice.leetcode.array.ListNode.*;
 
 public class addTwoNumber {
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
-        ListNode dummyHead = new ListNode(0);
+        ListNode dummyHead;
+        dummyHead = new ListNode(0);
         ListNode tail = dummyHead;
         int carry = 0;
 
