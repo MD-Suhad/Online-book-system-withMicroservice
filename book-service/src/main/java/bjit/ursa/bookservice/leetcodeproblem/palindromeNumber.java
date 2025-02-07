@@ -1,7 +1,7 @@
 package bjit.ursa.bookservice.leetcodeproblem;
 
 public class palindromeNumber {
-    public int reverse(int x) {
+    public boolean reverse(int x) {
         if (x < 0) {
             return false;
         }
